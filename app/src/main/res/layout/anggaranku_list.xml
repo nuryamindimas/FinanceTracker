@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="100dp"
@@ -10,28 +10,32 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/White">
 
         <LinearLayout
             android:id="@+id/layout_hari_tanggal"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/Gray">
 
             <TextView
                 android:id="@+id/tv_hari"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text= "Hari"/>
+                android:text= "Hari"
+                android:textColor="@color/White"/>
 
             <TextView
                 android:id="@+id/tv_tanggal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text= "Tanggal"/>
+                android:text= "Tanggal"
+                android:textColor="@color/White"/>
         </LinearLayout>
 
         <RelativeLayout
@@ -43,7 +47,6 @@
 
 
             <TextView
-                android:id="@+id/tv_pendapatan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -53,7 +56,6 @@
                 android:text="Pendapatan"/>
 
             <TextView
-                android:id="@+id/tv_pengeluaran"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -61,6 +63,28 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="20dp"
                 android:text="Pengeluaran"/>
+
+            <TextView
+                android:id="@+id/tv_pengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Red"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                tools:text="Jumlah" />
+
+            <TextView
+                android:id="@+id/tv_pendapatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Jumlah"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/Green"/>
 
         </RelativeLayout>
     </RelativeLayout>
